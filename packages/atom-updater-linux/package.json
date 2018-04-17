@@ -1,0 +1,105 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+        "spec": "/tmp/d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-11838-20418-100tljy.w3wpmhd7vi"
+    ]
+  ],
+  "_from": "../d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+  "_id": "atom-updater-linux@1.1.2",
+  "_inCache": true,
+  "_location": "/atom-updater-linux",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+    "spec": "/tmp/d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+  "_shasum": "fbec8e179e374dfe995037efff543b8f02996f06",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-11838-20418-706aap.pbwsysnhfr/package.tgz",
+  "_where": "/tmp/apm-install-dir-11838-20418-100tljy.w3wpmhd7vi",
+  "author": {
+    "name": "Andy Richardson"
+  },
+  "bugs": {
+    "url": "https://github.com/andyrichardson/atom-updater-linux/issues"
+  },
+  "dependencies": {
+    "@types/atom": "^1.25.0",
+    "@types/chai": "^4.1.2",
+    "@types/es6-promise": "^3.3.0",
+    "@types/jest": "^22.2.0",
+    "@types/request": "^2.47.0",
+    "chai": "^4.1.2",
+    "dom-listener": "^0.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "fs": "0.0.1-security",
+    "jest": "^22.4.2",
+    "request": "^2.81.0",
+    "ts-jest": "^22.4.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  },
+  "description": "Used to check for, download and install updates to Atom Editor in linux based distributions.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/andyrichardson/atom-updater-linux#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/spec/.*\\.(ts|tsx|js)$"
+  },
+  "keywords": [
+    "update",
+    "atom",
+    "updater",
+    "linux",
+    "fedora",
+    "ubuntu",
+    "debian",
+    "download"
+  ],
+  "license": "MIT",
+  "main": "./src/index.js",
+  "name": "atom-updater-linux",
+  "optionalDependencies": {},
+  "readme": "[![CircleCI](https://circleci.com/gh/andyrichardson/atom-updater-linux/tree/master.svg?style=shield)](https://circleci.com/gh/andyrichardson/atom-updater-linux/tree/master) \n[![TravisCI](https://travis-ci.org/andyrichardson/atom-updater-linux.svg?branch=master)](https://travis-ci.org/andyrichardson/atom-updater-linux)\n# Atom Updater Linux\n\nBe notified of updates to Atom and install without leaving the editor.\n\n## Installation\n\n    apm install atom-updater-linux\n\n## Dependencies\n * RPM / DPKG based Linux distribution\n * pkexec\n\n## Configuration\n**Beta releases:** Toggle between checking for stable and beta versions.\n\n**Check on startup:** Check for updates to Atom at launch.\n\n**Package Type:** Choose package type (_Auto detect_, _.deb_ or _.rpm_).\n\n## Manually check for updates\n\n#### **Keyboard shortcut**\n\n`ctrl + alt + u`\n\n#### **Atom menu**\n\n`Help -> Check for updates`\n\n<img src=\"https://i.imgur.com/H1itbnm.gif\" width=\"700px\"/>\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyrichardson/atom-updater-linux.git"
+  },
+  "scripts": {
+    "lint": "tslint --project .",
+    "postinstall": "tsc",
+    "test": "jest"
+  },
+  "version": "1.1.2"
+}

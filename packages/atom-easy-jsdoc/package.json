@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+        "spec": "/tmp/d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118112-30357-1rsezhh.b6y9t138fr"
+    ]
+  ],
+  "_from": "../d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+  "_id": "atom-easy-jsdoc@4.12.5",
+  "_inCache": true,
+  "_location": "/atom-easy-jsdoc",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+    "spec": "/tmp/d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+  "_shasum": "18f48a96e3ae5e8653623be953e10b2eb22eb1ac",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118112-30357-1gb1tgl.t9b9996bt9/package.tgz",
+  "_where": "/tmp/apm-install-dir-118112-30357-1rsezhh.b6y9t138fr",
+  "activationCommands": {
+    "atom-workspace": [
+      "jsdoc:block"
+    ],
+    "atom-text-editor": [
+      "editor:newline"
+    ]
+  },
+  "dependencies": {
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0"
+  },
+  "description": "JSDoc style comments for javascript development",
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.1",
+    "chai-things": "^0.2.0",
+    "eslint": "^4.6.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^5.0.0"
+  },
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "license": "MIT",
+  "main": "./lib/index",
+  "name": "atom-easy-jsdoc",
+  "optionalDependencies": {},
+  "readme": "# Atom easy JSDoc package\n\n[![Greenkeeper badge](https://badges.greenkeeper.io/tgandrews/atom-easy-jsdoc.svg)](https://greenkeeper.io/)\n![travis status](https://travis-ci.org/tgandrews/atom-easy-jsdoc.svg)\n![dependency status](https://david-dm.org/tgandrews/atom-easy-jsdoc.svg)\n\nAtom package for quick jsdoc comment generation.\nForked from [Atom JS Doc by Craig Offutt](https://github.com/coffutt/atom-jsdoc)\n\n## Install\n\n```bash\napm install atom-easy-jsdoc\n```\n\n## Usage\n\nControl-Shift-d or Control-Shift-j to add comment templates.\n\nTo add comments for any piece of code, position the cursor anywhere on the line preceding the line you wish to comment on.\n```javascript\n/**\n * functionComment - description\n *  \n * @param  {type} argA description\n * @param  {type} argB description\n * @param  {type} argC description\n * @return {type}      description\n */\nfunction functionComment (argA, argB, argC) {\n    return 'jsdoc';\n}\n```\n\n```javascript\n/**\n * This is an empty comment\n */\nvar a = 'A';\n```\n\n## Autocontinue\n\nComments now are automatically continued if the user hits enter (new line event) while inside of a block (/**..etc.).\n\n## Beta version\n\nA complete rewrite with tests and using an AST instead of regular expressions is enabled behind the beta flag. Please note this is a true beta and although it works on my projects your mileage may vary.\n\n### Contribute\nI'll be adding features periodically, however bug fixes, feature requests, and pull requests are all welcome.\n",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "npm run test:lint && npm run test:unit && npm run test:integration",
+    "test:integration": "mocha --compilers js:babel-register tests/setup.js 'tests/integration/**/*.test.js'",
+    "test:lint": "eslint .",
+    "test:unit": "mocha --compilers js:babel-register tests/setup.js 'tests/unit/**/*.test.js'"
+  },
+  "version": "4.12.5"
+}

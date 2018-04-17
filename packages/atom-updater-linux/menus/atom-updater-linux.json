@@ -1,0 +1,13 @@
+{
+  "menu": [
+    {
+      "label": "Help",
+      "submenu": [
+        {
+          "label": "Check for updates",
+          "command": "atom-updater-linux:check"
+        }
+      ]
+    }
+  ]
+}
